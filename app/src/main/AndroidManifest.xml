@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dev.lotus.picturebook">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PictureBook"
+        tools:targetApi="31">
+        <activity
+            android:name=".Tulip_Flowers_Activity2" android:parentActivityName=".Native_Flower_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Native_Flower_Activity2" android:parentActivityName=".Cherry_Blossom_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Cherry_Blossom_Activity2"
+            android:exported="false"
+            android:parentActivityName=".PictureBkRoseActivity2" />
+        <activity
+            android:name=".PictureBkRoseActivity2"
+            android:exported="false"
+            android:parentActivityName=".PictureBookActivity1" />
+        <activity
+            android:name=".PictureBookActivity1"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
